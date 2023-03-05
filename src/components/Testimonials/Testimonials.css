@@ -1,0 +1,104 @@
+.Testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 5rem 2rem;
+    /* border: 2px solid white; */
+    
+}
+
+.left-t{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.left-t>:nth-child(1){
+    color: skyblue;
+    font-weight: bold;
+}
+
+.left-t>:nth-child(2),.left-t>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.left-t>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+    width: fit-content;
+    /* border: 2px solid black; */
+    /* width: 60%; */
+}
+
+.left-t>:nth-child(5){
+    display: flex;
+
+}
+.review{
+    height: 8rem;
+    /* border: 2px solid black; */
+}
+.name{
+    display: flex;
+    gap: 5px;
+}
+
+
+.right-t{
+    flex: 1;
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+.right-t>:nth-child(1){
+    width: 17rem;
+    height: 20rem;
+    position: absolute;
+    background: transparent;
+    border: 2px solid skyblue;
+    right:9rem;
+    top:1.3rem;
+}
+
+.right-t>:nth-child(2){
+    width: 17rem;
+    height: 20rem;
+    position: absolute;
+    background: skyblue;
+    right:7.3rem;
+    top: 2.5rem;
+
+}
+
+
+.right-t>img{
+    width: 17rem;
+    position: absolute;
+    height: 20rem;
+    object-fit: cover;
+    right:8rem;
+    top:2rem;
+
+}
+
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}

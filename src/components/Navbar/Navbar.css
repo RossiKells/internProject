@@ -1,0 +1,203 @@
+.Navbar{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.left-n{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: .3rem;
+
+
+    
+}
+
+
+
+.logoName{
+    display: flex;
+    /* border: 2px solid white; */
+    text-align: center;
+    padding-top: 1rem;
+    gap: 1px;
+    cursor: pointer;
+
+    flex-direction: column;
+}
+
+.logoName>:nth-child(1){
+    font-size: 1.2rem;
+    color: white;
+    font-family: cursive;
+}
+
+.logoName>:nth-child(2){
+    font-size: 0.6rem;
+    color: white;
+    font-family: cursive;
+}
+
+.left-n>img{
+    width: 6rem;
+}
+
+.mid-n{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    justify-content: space-around;
+}
+
+.lists{
+    display: flex   ;
+    list-style: none;
+    gap: 1.3rem;
+    font-size:15px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    white-space: nowrap;
+    /* font-weight: ; */
+    color: white;
+    /* word-wrap: nowrap; */
+
+}
+
+.lists>li{
+    cursor: pointer;
+}
+
+.lists>li:hover{
+    transition: .2s ease-in;
+    color: skyblue
+}
+
+
+.right-n>button{
+    padding: .4rem 1rem;
+    height: 2.2rem;
+    white-space: nowrap;
+
+
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+    background-color: skyblue;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 1200px){
+    
+   .Navbar{
+    padding: 1rem;
+
+   }
+    .lists{
+        gap: .7rem;
+    }
+   
+    .right-n>button{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .Navbar{
+        padding: .8rem;
+    
+       }
+    .left-n>img{
+        width: 5rem;
+    }
+
+    .logoName>:nth-child(1){
+        font-size: 1rem;
+        color: white;
+        font-family: cursive;
+    }
+    
+    .logoName>:nth-child(2){
+        font-size: 0.5rem;
+        color: white;
+        font-family: cursive;
+    }
+    
+       /* .right-n>button{
+        font-size: .6rem;
+        text-align: center;
+        padding-left: .7rem;
+        height: 1.8rem;
+        
+        width: 90%;
+        } */
+
+    .lists{
+        gap: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 1080px){
+    
+    .mid-n{
+        width: 70%;
+    }
+    .lists{
+        /* width: 10; */
+        font-size: .85rem;
+    }
+    .right-n>button{
+        font-size: .6.5rem;
+        text-align: center;
+        padding-left: .7rem;
+        height: 2rem;
+        
+        width: 90%;
+        }
+}
+
+@media screen and (max-width: 1000px){
+    .lists{
+        /* width: 10; */
+        font-size: .8rem;
+    }
+
+    .right-n>button{
+        font-size: .6rem;
+        text-align: center;
+        padding-left: .4rem;
+        height: 2rem;
+        
+        width: 85%;
+        }
+
+    .left-n>img{
+            width: 4rem;
+        }
+        .logoName>:nth-child(1){
+            font-size: .8rem;
+            color: white;
+            font-family: cursive;
+        }
+        
+        .logoName>:nth-child(2){
+            font-size: 0.4rem;
+            color: white;
+            font-family: cursive;
+  
+  
+        }
+        
+}
+

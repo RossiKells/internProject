@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import {motion,useScroll} from 'framer-motion'
 import './App.css';
+import Hero from './components/Hero/Hero';
+import Navbar from './components/Navbar/Navbar';
+import Services from './components/Services/Services';
+import Clients from './components/Clients/Clients';
+import Testimonials from './components/Testimonials/Testimonials';
+import Footer from './components/Footer/Footer';
+import Aboutus from './components/Aboutus/Aboutus';
 
 function App() {
+  const {scrollYProgress}=useScroll()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <motion.div className='progressBar'
+      style={{scaleX:scrollYProgress}}></motion.div>
+      <Navbar/>
+      <Hero/>
+      <Aboutus/>
+      <Services/>
+      <Clients/>
+      <Testimonials/>
+      <Footer/>
+      
     </div>
   );
 }

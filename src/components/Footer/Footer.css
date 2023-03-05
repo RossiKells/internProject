@@ -1,0 +1,234 @@
+.footer{
+    padding: 0 2rem;
+    height: 20rem;
+    /* width: 100%; */
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    display: flex;
+    /* flex-direction: column; */
+    color: white;
+
+}
+.fleft{
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.emailSec{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    /* border: 2px solid white; */
+
+}
+
+.emailSec>:nth-child(1){
+    text-transform: uppercase;
+    font-size: 1rem;
+    /* letter-spacing: 1px; */
+    font-weight: semi-bold;
+    color: skyblue;
+}
+
+.emailSec>:nth-child(2){
+    font-size: 2rem;
+}
+
+.emailSec>input{
+    border: none;
+    padding: .3rem;
+    border-bottom: 2px solid white;
+}
+
+.inpEmail{
+    position: relative;
+    border: 2px solid ;
+    border: none;
+    border-bottom: 2px solid rgb(170, 186, 202);
+    height: 2rem;
+    width: 70%;
+}
+
+.inpEmail>input{
+    height: 2rem;
+    color: rgb(170, 186, 202);
+    
+    width:70%;
+    padding-left: 5px;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    border: none;
+
+}
+::placeholder{
+    color: rgb(170, 186, 202);
+    letter-spacing: 1px;
+}
+
+.sendIcon{
+    position: absolute;
+    right: .1rem;
+    /* width: 8rem; */
+    font-size: 4rem;
+    bottom: 7px;
+    color: pink;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logoSec{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+.logoimg{
+    display: flex;
+    align-items: center;
+}
+.logooname{
+    display: flex;
+    margin-top: 18px;
+    /* border: 2px solid black; */
+    /* align-items: ; */
+
+    justify-content: center;
+    flex-direction: column;
+}
+.logooname>:nth-child(1){
+    font-size: 1rem;
+    /* padding-top: ; */
+    color: white;
+    font-family: cursive;
+}
+
+.logooname>:nth-child(2){
+    font-size: 0.6rem;
+    color: white;
+    font-family: cursive;
+}
+
+.logoimg>img{
+    width: 7rem;
+    object-fit: cover;
+}
+.logoSec>span{
+    font-size: .9rem;
+    padding-left: 10px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    
+}
+.fright{
+    position: relative;
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+
+}
+
+.joinImg{
+    height: 55%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.joinImg>img{
+    width: 13rem;
+
+}
+
+.contactPart{
+    /* display:; */
+    height: 30%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+
+}
+
+.eemail{
+    text-decoration: none;
+    /* color: white; */
+    color: #9caab8;
+    transition: 300ms ease-in-out;
+}
+.eemail:hover{
+    color: white;
+
+}
+
+.contactComp{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 1rem;
+
+}
+
+.contactComp>:nth-child(1){
+    /* color: #9caab8; */
+    /* letter-spacing: .5px; */
+    font-size: 1.2rem;
+
+}
+
+.contactComp>:nth-child(2){
+    color: #9caab8;
+    letter-spacing: .5px;
+    font-size: 1rem;
+    text-align: center;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.contactComp>:nth-child(2):hover{
+    color: white;
+
+}
+
+.socialmediaIcons{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.socialmediaIcons>:nth-child(1){
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.socialmediaIcons>:nth-child(1):hover{
+    color: skyblue;
+}
+.socialmediaIcons>:nth-child(2){
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+}
+.socialmediaIcons>:nth-child(2):hover{
+    color: purple;
+}
+
+.socialmediaIcons{
+    width: 80%;
+    margin: auto;
+}
+

@@ -1,0 +1,62 @@
+.clients{
+    padding: 2rem 4rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+    /* border: 2px solid black; */
+}
+.clients>span{
+    color: skyblue;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.img_sec{
+    /* border: 2px solid black; */
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+.clientsCard{
+
+   /* background-color: white; */
+   height: 8rem;
+   width: 10rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 200ms ease-in-out;
+     
+    padding: 3rem;
+    opacity: 1;
+}
+
+
+.clientsCard>img{
+    margin: auto;
+    width: 10rem;
+    object-fit: contain;
+    height: 10rem;
+}
+
+.clientsCard:hover{
+    opacity: .7;
+   
+}
+
