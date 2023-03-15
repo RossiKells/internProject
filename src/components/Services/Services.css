@@ -13,8 +13,11 @@
 
 .card_sec {
     display: flex;
-    gap: .7rem;
-    justify-content: space-between;
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+   
 }
 
 
@@ -40,11 +43,11 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     flex-direction: column;
-    gap: .7rem;
+    gap: .4rem;
     color: white;
     
-    width: 23rem;
-    height: 29rem;
+    width: 18rem;
+    height: 26rem;
    
     position: relative;
     /* border: 2px solid black; */
@@ -116,4 +119,112 @@
 .text-sec>button:hover{
     background-color: rgb(120, 185, 207);
 }
+
+
+@media screen and (max-width:768px){
+    .stitle{
+        font-size: 1rem;
+    }
+    .card_sec{
+         align-items: center; 
+         justify-content: center; 
+        
+         gap: 1.5rem; 
+
+       
+    }
+
+    
+    .card_sec{
+        justify-content: flex-start;
+    }
+    .cards{
+        gap: .1rem;
+        width: 13rem;
+        height: 20rem;
+        /* justify-content: space-between; */
+    }
+
+    .text-sec>:nth-child(1){
+        font-size: .9rem;
+        padding: .8rem;
+    }
+
+    .text-sec>:nth-child(2){
+        font-size: .7rem;
+    }
+
+    .text-sec>button{
+        width: 5rem;
+        height: 2rem;
+        font-size: .7rem;
+        margin-bottom: 6px;
+    }
+
+
+    
+   
+    
+}
+
+@media screen and (max-width:425px){
+    .card_sec{
+        flex-direction: column;
+    }
+    .cards{
+        justify-content: center;
+        gap: .1rem;
+        width: 17rem;
+        height: 23rem;
+        /* justify-content: space-between; */
+    }
+}
+
+@media screen and (max-width:320px){
+
+    .card_sec{
+        /* border: 2px solid black; */
+        width: 100%;
+    }
+    
+
+    .cards{
+        /* border: 2px solid black; */
+        width: 16rem;
+        height: 20rem;
+    }
+
+    
+}
+
+@media screen and (max-width:375px){
+    .cards{
+        /* border: 2px solid black; */
+        width: 14rem;
+        height: 15.5rem;
+    }
+
+    .text-sec{
+        gap: .4rem;
+
+    }
+
+    .text-sec>:nth-child(1){
+        font-size: .7rem;
+        padding: .6rem;
+    }
+
+    .text-sec>:nth-child(2){
+        font-size: .6rem;
+    }
+
+    .text-sec>button{
+        width: 4rem;
+        height: 1.5rem;
+        font-size: .5rem;
+        margin-bottom: 6px;
+    }
+}
+
+
 

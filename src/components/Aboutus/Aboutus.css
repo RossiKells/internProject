@@ -15,6 +15,47 @@
 
 }
 
+.circle_left{
+  /* position: absolute; */
+  right: 35%;
+  top: 6%;
+
+
+  /* color: #fff; */
+padding: 5%;
+width: 8rem;
+height: 8rem;
+margin: 0 -15px;
+/* mix-blend-mode: multiply; */
+background: url('../../assets/aboutus.jpg');
+background-size: cover;
+background-position: center;
+border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+animation: living-cell 1s infinite;
+
+}
+
+.circle_left1{
+  position: absolute;
+  right: 65%;
+  top: 23%;
+
+
+  /* color: #fff; */
+padding: 5%;
+width: 7rem;
+height: 7rem;
+margin: 0 -15px;
+/* mix-blend-mode: multiply; */
+/* background-color:lightgreen; */
+border: 2px solid lightgreen;
+z-index: -1;
+background-size: cover;
+background-position: center;
+border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  animation: living-cell 1s infinite;
+}
+
 .a-left>:nth-child(1){
     color:  skyblue;
     letter-spacing: 1px;
@@ -45,7 +86,7 @@
 }
 
 .circle {
-    position: absolute;;
+    position: absolute;
     right: 35%;
     top: 6%;
 
@@ -101,3 +142,41 @@
     50% {
       border-radius:  80% 65% 80% 50% / 90% 80% 75% 75%;
     }}
+
+
+@media screen and (max-width: 768px) {
+  .a-left>:nth-child(1){
+    
+    font-size: .8rem;
+    
+  }
+
+  .aboutTitle{
+    font-size: .9rem;
+  }
+  .aboutDesc{
+    font-size: .8rem;
+  }
+
+  .circle{
+    width: 8rem;
+  height: 8rem;
+
+  }
+
+  
+  
+
+
+
+  
+}
+
+@media screen and (max-width:425px) {
+  .a-right{
+    display: none;
+  }
+
+  
+  
+}

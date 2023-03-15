@@ -1,14 +1,43 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
 import "./Navbar.css"
+import {AiOutlineClose} from 'react-icons/ai'
+import {GiHamburgerMenu} from 'react-icons/gi'
+import{useDispatch} from 'react-redux'
+import { bindActionCreators } from 'redux'
+import {actionCreators} from '../../state/index'
+
 
 import {motion} from 'framer-motion'
 
 
 const Navbar = () => {
+    // const val=useSelector(action=>action.val)
+    const vaal=false;
+    const dispatch=useDispatch();
+    const {open,close}=bindActionCreators(actionCreators,dispatch)
+    console.log(open);
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+    
     const transition={type:"spring",duration:1.5}
   return (
+    <>
+    
+    
     <nav className='Navbar'>
+        
         <div className="left-n">
             <motion.img src={logo} alt="" srcset=""
             initial={{x:-40,y:50}}
@@ -49,11 +78,37 @@ const Navbar = () => {
         </div>
 
         <div className="right-n">
-            <button className='button'>Join Now</button>
+            <button className='button' onClick={open()}>Contact Us</button>
+        </div>
+
+        <div className="smallSizedNavbar">
+            <GiHamburgerMenu fontSize={27} color="#fff"/>
+
+            
+       
+            {
+                vaal&&(
+
+            <div className="smallnavbarOverlay">
+            <AiOutlineClose className='closeButton' onClick={()=>{close()}}/>
+            <ul className='list'>
+                <li>Home</li>
+                <li>About</li>
+                <li>Steam Education</li>
+                <li>Job Placement</li>
+                <li>Software Development</li>
+                <li>IT consultation</li>
+                <li>LMS</li>
+                    
+            </ul>
+            </div>)
+            }
+
         </div>
 
 
     </nav>
+    </>
   )
 }
 

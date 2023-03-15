@@ -1,10 +1,90 @@
+
+
+
+
+
 .Navbar{
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
 
+
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+    
+    /* border: 2px solid black; */
+}
+
+
+@media screen and (max-width: 425px){
+   
+    .left-n>img{
+        width: 3rem;
+    }
+
+    logoName>:nth-child(1){
+        font-size: .5rem;
+       
+    }
+    
+}
+
+
+
+
+
+
+
+
+.smallSizedNavbar{
+    display: none;
+}
+.smallnavbarOverlay {
+    display: flex;
+
+   
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    /* border: 2px solid black; */
+    background-color: #3c3f45;
+    /* display: flex; */
+
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.closeButton{
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-size: 2rem;
+    color: white;
+    translate:transform rotate(360deg);
+}
+
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
 .left-n{
@@ -199,5 +279,37 @@
   
         }
         
+}
+
+
+/* for tablet view */
+
+@media screen and (max-width: 768px) {
+    .Navbar{
+        padding: 0 2rem;
+        
+    }
+    .mid-n{
+        display: none;
+    }
+
+    .smallSizedNavbar{
+        display: flex;
+    }
+
+    .right-n{
+        display: none;
+    }
+
+    .logoName>:nth-child(1){
+        font-size: 1rem;
+    }
+    .logoName>:nth-child(2){
+        font-size: 0.7rem;
+    }
+    .left-n>img{
+        width: 4rem;
+    }
+    
 }
 

@@ -7,6 +7,7 @@ import Clients from './components/Clients/Clients';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import Aboutus from './components/Aboutus/Aboutus';
+// import SmallNavbar from './components/smallNavbar/smallNavbar';
 
 function App() {
   const {scrollYProgress}=useScroll()
@@ -15,6 +16,7 @@ function App() {
       <motion.div className='progressBar'
       style={{scaleX:scrollYProgress}}></motion.div>
       <Navbar/>
+      {/* <SmallNavbar/> */}
       <Hero/>
       <Aboutus/>
       <Services/>

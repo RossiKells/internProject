@@ -1,10 +1,134 @@
 .Hero{
-    /* padding: 0 2rem; */
+    padding: 2rem 2rem;
     display: flex;
     justify-content: space-between;
+    height: 100%;
     /* flex-direction: column; */
 
 }
+
+
+.contactForm{
+    left: 35%;
+    top: 20%;
+    
+    /* border: 2px solid black; */
+    background: #ffffff10;
+    backdrop-filter: blue(20px);
+    -webkit-backdrop-filter: blur(12px);
+    position: absolute;
+    z-index: 5;
+    /* border-radius: 9px; */
+    height: 29rem;
+    width: 26rem;
+    
+}
+
+.contactForm>:nth-child(1){
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+.forum{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 35px;
+}
+.forum>div{
+    position: relative;
+    width: 90%;
+   border-bottom: 2px solid white;
+    margin: auto;
+}
+.forum>div>label{
+    position: absolute;
+    left: 3%;
+    top: 25%;
+    pointer-events: none;
+
+    color: white;
+    transition: .5s;
+    font-size: .8rem;
+    
+
+
+}
+.forum>div>input{
+    background: transparent;
+
+    border: none;
+    outline: none;
+    width: 87%;
+    color: white;
+    padding-left: 12px;
+    height: 2rem;
+    transition: .8s;
+   
+
+}
+
+.forum>div>textarea{
+    min-width: 92%;
+    min-height: 7rem;
+    max-width: 92%;
+    max-height: 7rem;
+    outline: none;
+    color: white;;
+    padding: 1rem;
+    background: transparent;
+    /* border: 2px solid white; */
+}
+
+.messagebutton{
+    width: 5rem;
+    height: 2rem;
+    background: skyblue;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+
+.forum>div>input:focus~label{
+    top:-10px;
+    font-size: .8rem;
+}
+
+.forum>div>input:valid~label{
+    top: -10px;
+    font-size: .8rem;
+}
+
+
+
+.forum>div>input:active~label{
+    top: -10px;
+}
+
+.forum>div>textarea:focus~label{
+   display: none;
+}
+
+.forum>:nth-child(4){
+    border: none;
+}
+
+.forum>:nth-child(5){
+    border: none;
+}
+
+
+
+
+
+
 
 
 .left-h{
@@ -114,6 +238,8 @@
 
 .right-h{
     position: relative;
+    /* border: 2px solid black; */
+    
 
     flex: 1;
 
@@ -129,7 +255,8 @@
 
 .hero-img{
     position: absolute;
-    width: 45rem;
+    /* border: 2px solid black; */
+    width: 40rem;
     /* margin-top: 2px; */
     right: 0;
     top: 35px;
@@ -181,4 +308,140 @@
 }
 
 
+@media screen and (max-width:768px) {
+    .Hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0 1rem; */
+    }
+
+    .left-h{
+        /* border: 2px solid black; */
+        justify-content: center;
+        align-items: center;
+        padding:0 1rem;
+    }
+
+
+    .solgan>:nth-child(1){
+        font-size: 1.5rem;
+
+
+    }
+
+    .desc{
+        text-align: center;
+    }
+    
+    .figures{
+        font-size: 1rem;
+
+        /* text-align: center; */
+
+    }
+    .right-h{
+        /* border: 2px solid black; */
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .right-h>img{
+        /* border: 2px solid black; */
+        position: relative;
+        top: 7px;
+        left: 0;
+        margin: auto;
+
+
+        width: 32rem;
+
+    }
+
+    
+}
+
+@media screen and (max-width:425px){
+    .quote{
+        height: 1rem;
+        width:11rem;
+        font-size: .8rem;
+        /* text-align: center; */
+    }
+
+    .solgan{
+        margin-top: 5px;
+        gap: .2rem;
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .solgan>:nth-child(1){
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    .desc{
+        font-size: .8rem;
+        padding-top: .2rem;
+        font-weight: 100;
+    }
+    .figures{
+        gap: 1rem;
+        padding: 1.8rem 1rem;
+    }
+    .figures>div>span:nth-of-type(1){
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .figures>div>span:nth-of-type(2){
+        font-size: .6rem;
+        text-align: center;
+    }
+
+    .btn{
+        margin-top: .4rem;
+    }
+
+    .btn>:nth-child(1){
+        width: 5rem;
+        height: 2rem;
+        font-size: .7rem;
+    }
+
+    .btn>:nth-child(2){
+        width: 5rem;
+        height: 2rem;
+        font-size: .7rem;
+    }
+
+    .right-h{
+        width: 23rem;
+        /* border: 2px solid black; */
+    }
+
+    .hero-img{
+        overflow: hidden;
+        width: 18rem;
+        /* border: 2px solid black; */
+    }
+
+    .right-h>img{
+        width: 17rem;
+    }
+    
+
+
+}
+
+
+@media screen and (max-width:320px){
+    .right-h{
+        /* border: 2px solid black; */
+        width: 19.5rem;
+    }
+
+}
 

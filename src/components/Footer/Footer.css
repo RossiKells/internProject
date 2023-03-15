@@ -154,8 +154,9 @@
     /* border: 2px solid black; */
     display: flex;
     align-items: center;
-    gap: 1rem;
     justify-content: space-between;
+    gap: .8rem;
+    flex-wrap: wrap;
 
 }
 
@@ -207,7 +208,7 @@
     gap: 1rem;
     padding-left: 1rem;
 }
-
+ 
 .socialmediaIcons>:nth-child(1){
     font-size: 1.5rem;
     cursor: pointer;
@@ -230,5 +231,323 @@
 .socialmediaIcons{
     width: 80%;
     margin: auto;
+}
+
+
+@media screen and (max-width:768px) {
+    
+    /* left side */
+    .fleft{
+        gap: 5.5rem;
+        width: 50%;
+        /* border: 2px solid white;; */
+    }
+    .emailSec>:nth-child(1){
+        font-size: .8rem;
+        padding-left: 5px;
+        
+    }
+    .emailSec>:nth-child(2){
+        font-size: 1rem;
+        padding-left: 5px;
+    }
+
+
+
+
+    .inpEmail{
+        /* border: 2px solid black; */
+        /* padding: 0rem 0rem; */
+        margin-right: 4px;
+        width: 55%;
+    }
+    .logoimg>img{
+        width: 4rem;
+    }
+
+    .lasttext{
+        font-size: .7rem;
+        /* color: black;; */
+    }
+    /* right side */
+
+    .fright{
+        /* border: 2px solid black;; */
+        width: 60%;
+    }
+
+    .joinImg{
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .joinImg>img{
+        width: 6rem;
+        height: 5rem;
+    }
+    .contactPart{
+        /* border: 2px solid black;; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactComp>:nth-child(1){
+        font-size: .7rem ;
+        /* color: black; */
+    }
+    .contactComp>:nth-child(2){
+        font-size: .7rem ;
+
+    }
+
+    .logoSec>span{
+        font-size: .6rem;
+        padding-left: 1px;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        
+    }
+
+    .logooname>:nth-child(1){
+        font-size: .7rem;
+        /* padding-top: ; */
+        color: white;
+        font-family: cursive;
+    }
+    
+    .logooname>:nth-child(2){
+        font-size: 0.5rem;
+        color: white;
+        font-family: cursive;
+    }
+    
+    .logoimg>img{
+        width: 3.4rem;
+        object-fit: cover;
+    }
+
+    .socialmediaIcons{
+        /* border: 2px solid white; */
+        width: 75%;
+        height: 10%;
+        padding: 0;
+        /* border: 2px solid black; */
+    }
+
+    .socialmediaIcons>:nth-child(1){
+        font-size: .9rem;
+        
+        
+    }
+    .socialmediaIcons>:nth-child(2){
+        font-size: .9rem;
+        
+        
+    }
+
+    .socialM{
+        margin-top: 5px;
+    }
+
+
+    @media screen and (max-width:425px) {
+        .contactPart{
+            /* margin-top: rem; */
+            /* border: 2px solid black; */
+                
+            gap: 1rem;
+            /* height: 35%; */
+            align-items:baseline;
+            justify-content: flex-start;
+            /* flex-wrap: wrap; */
+
+        }
+
+        .emailSec{
+            gap: .9rem;
+            /* border: 2px solid black; */
+        }
+
+        .contactComp>:nth-child(1){
+            text-align: center;
+            font-size: .5rem ;
+            /* border: 2px solid black;; */
+            /* color: black; */
+        }
+        .contactComp>:nth-child(2){
+            font-size: .5rem ;
+            
+    
+        }
+
+        .socialmediaIcons>:nth-child(1){
+            font-size: 1.3rem;
+            
+            
+        }
+        .socialmediaIcons>:nth-child(2){
+            font-size: 1.3rem;
+            
+            
+        }
+        .icon{
+            gap: .6rem;
+        }
+
+        .emailSec>:nth-child(1){
+            font-size: .7rem;
+           
+            
+        }
+
+        .emailSec>:nth-child(2){
+            font-size: .7rem;
+           
+            
+        }
+
+        .inpEmail{
+            /* border: 2px solid black; */
+            /* padding: 0rem 0rem; */
+            margin-right: 4px;
+            width: 70%;
+        }
+        ::placeholder{
+            font-size: .8rem;
+        }
+    
+        .lasttext{
+            font-size: .7rem;
+            /* color: black;; */
+        }
+
+
+
+    }
+
+    @media screen and (max-width:375px){
+        .fleft{
+            gap: 4.5rem;
+            width: 50%;
+            /* border: 2px solid white;; */
+        }
+        .logoimg>img{
+            width: 2.5rem;
+            object-fit: cover;
+        }
+
+        .logooname>:nth-child(1){
+            font-size: .5rem;
+            /* padding-top: ; */
+            color: white;
+            font-family: cursive;
+        }
+        .logooname>:nth-child(2){
+            font-size: 0.5rem;
+            color: white;
+            font-family: cursive;
+        }
+        .logoSec{
+            gap:10px;
+        }
+
+        .logoSec>span{
+            font-size: 7px;
+            padding-left: 10px;
+            line-height: .8rem;
+            /* letter-spacing: 1px; */
+            /* border: 2px solid black;; */
+            
+        }
+    }
+
+    @media screen and (max-width:320px){
+       
+       .joinImg{
+        /* border: 2px solid black;; */
+        height: 30%;
+       }
+        .joinImg>img{
+            width: 5rem;
+            height: 4rem;
+        }
+
+        ::placeholder{
+            font-size: .5rem;
+        }
+
+        .contactPart{
+            /* border: 2px solid black; */
+
+            height: 30%;
+            width: 100%;
+            gap: 4px;
+        }
+
+        .fleft{
+            gap: 34px;
+        }
+
+        .fright{
+            gap: 3.5rem;
+        }
+
+        .contactComp>:nth-child(1){
+            /* color: #9caab8; */
+            /* letter-spacing: .5px; */
+            font-size: 8px;
+        
+        }
+
+        .contactComp{
+            gap: 5px;
+        }
+        .icon{
+            gap: 2px;
+        }
+
+        .socialmediaIcons>:nth-child(1){
+            font-size: 1rem;
+            
+        }
+
+        .socialmediaIcons>:nth-child(2){
+            font-size: 1rem;
+            
+        }
+
+        .socialmediaIcons{
+            gap: 2px;
+        }
+        .logoSec{
+            /* border: 2px solid black; */
+            width: 7rem;
+            gap: 27px;
+            /* height: 6rem; */
+        }
+
+        .logoSec>span{
+            font-size: .5rem;
+            padding-left: 1px;
+            line-height: 10px;
+            letter-spacing: 1px;
+            
+        }
+
+        
+    }
+
+
+
+
+    
+
+    
+
+    
+    
 }
 

@@ -18,11 +18,11 @@ const Testimonials = () => {
                 <span>SAY ABOUT US</span>
                 <motion.span className='review'
                 key={data}
-                initial={{opacity:0,x:-100}}
+                initial={{opacity:0,x:-50}}
                 transition={{...transition,duration:2}}
                 // animate={{opacity:1,x:0}}
                 whileInView={{opacity:1,x:0}}
-                exit={{opacity:0,x:-100}}
+                exit={{opacity:0,x:-50}}
                 >
                     {testimonialsData[data].review}
                     
@@ -55,15 +55,16 @@ const Testimonials = () => {
 
             <motion.div
             // key={data}
-            initial={{opacity:0,x:100}}
+            initial={{opacity:0,x:-100}}
             transition={{...transition,duration:2}}
             // animate={{opacity:1,x:0}}
             whileInView={{opacity:1,x:0}}
             // exit={{opacity:0,x:-100}}
             ></motion.div>
+            
             <motion.img src={testimonialsData[data].image} alt="" srcset="" 
             key={data}
-            initial={{opacity:0,x:100}}
+            initial={{opacity:0,x:50}}
             // animate={{opacity:1,x:0}}
             whileInView={{opacity:1,x:0}}
             exit={{opacity:0,x:-100}}
