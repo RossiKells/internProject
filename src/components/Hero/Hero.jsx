@@ -4,24 +4,27 @@ import coderImg from '../../assets/code.png'
 
 import { motion } from 'framer-motion'
 import { AiOutlineClose } from 'react-icons/ai'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector ,useDispatch} from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { actionCreators } from '../../state/index.js'
+import {actionCreators} from '../../state/index.js'
+
 
 
 
 const Hero = () => {
-    const val = useSelector(action => action.val)
-    console.log(val)
-    const dispatch = useDispatch()
-    const { open,close } = bindActionCreators(actionCreators, dispatch)
+    // console.log(actionCreators)
+    const val=useSelector(action=>action.val)
+    const dispatch=useDispatch();
+    const {close}=bindActionCreators(actionCreators,dispatch)
+    
+    
     const transition = { type: "spring", duration: 3 }
     return (
         <div className='Hero'>
             {
-                val && (
+             val&&(
                     <div className="contactForm">
-                        <AiOutlineClose onClick={close()} />
+                        <AiOutlineClose onClick={()=>{close()}} />
                         <form action="submit" className='forum'>
                             <div>
 

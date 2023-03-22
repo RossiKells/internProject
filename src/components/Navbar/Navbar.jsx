@@ -3,20 +3,29 @@ import logo from '../../assets/logo.png'
 import "./Navbar.css"
 import {AiOutlineClose} from 'react-icons/ai'
 import {GiHamburgerMenu} from 'react-icons/gi'
-import{useDispatch} from 'react-redux'
-import { bindActionCreators } from 'redux'
+import { useDispatch ,useSelector} from 'react-redux'
 import {actionCreators} from '../../state/index'
+import { bindActionCreators } from 'redux'
 
 
 import {motion} from 'framer-motion'
 
 
 const Navbar = () => {
-    // const val=useSelector(action=>action.val)
-    const vaal=false;
-    const dispatch=useDispatch();
-    const {open,close}=bindActionCreators(actionCreators,dispatch)
-    console.log(open);
+    const val2=useSelector(action=>action.val2)
+    const dispatch= useDispatch();
+    const {open}=bindActionCreators(actionCreators,dispatch)
+    const {navOpen,navClose}=bindActionCreators(actionCreators,dispatch)
+
+
+    
+    
+    
+
+    
+    
+    
+    
     
 
 
@@ -78,19 +87,19 @@ const Navbar = () => {
         </div>
 
         <div className="right-n">
-            <button className='button' onClick={open()}>Contact Us</button>
+            <button className='button' onClick={()=>{open()}} >Contact Us</button>
         </div>
 
         <div className="smallSizedNavbar">
-            <GiHamburgerMenu fontSize={27} color="#fff"/>
+            <GiHamburgerMenu fontSize={27} color="#fff" onClick={()=>{navOpen()}}/>
 
             
        
             {
-                vaal&&(
+               val2&& (
 
             <div className="smallnavbarOverlay">
-            <AiOutlineClose className='closeButton' onClick={()=>{close()}}/>
+            <AiOutlineClose className='closeButton' onClick={()=>{navClose()}} />
             <ul className='list'>
                 <li>Home</li>
                 <li>About</li>

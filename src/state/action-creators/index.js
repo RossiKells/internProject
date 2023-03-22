@@ -1,18 +1,32 @@
 export const open=()=>{
-    return (dispatch)=>{
+    return(dispatch)=>{
         dispatch({
-            type:"open",
-            // payload:val
+            type:"open"
         })
     }
 }
 
 export const close=()=>{
-    return (dispatch)=>{
+    return(dispatch)=>{
         dispatch({
-            type:"close",
-            // payload:val
+            type:"close"
         })
     }
 }
 
+
+export const navOpen=()=>{
+    return(dispatch)=>{
+        dispatch({
+            type:"navopen"
+        })
+    }
+}
+
+export const navClose=()=>{
+    return(dispatch)=>{
+        dispatch({
+            type:"navclose"
+        })
+    }
+}

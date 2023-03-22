@@ -1,19 +1,11 @@
 import { combineReducers } from "redux";
-import { openClose } from "./openClose";
-
-// console.log(openClose);
-
+import {openClose} from "./openClose"
+import { navopenClose } from "./navOpenClose";
 
 
-
-
-const reducers=combineReducers({
-    val:{openClose}
-    // val1:{hamOpenClose}
-
-    
-
+const reducer=combineReducers({
+    val:openClose,
+    val2:navopenClose
 })
 
-
-export default reducers;
+export default reducer;
