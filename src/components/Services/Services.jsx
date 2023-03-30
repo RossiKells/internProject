@@ -3,10 +3,14 @@ import './Services.css'
 
 import { servicesdata } from '../../data/services'
 import {motion } from 'framer-motion'
+import useFetch from '../../useFetch/useFetch'
+import {Link} from 'react-router-dom'
 
 
 
 const Services = () => {
+    const {ddata}=useFetch('http://localhost:1337/api/services')
+    // console.log(ddata.data)
     const transition={type:'spring'}
     const durations = [3, 4, 5, 6, 7];
     return (
@@ -15,8 +19,8 @@ const Services = () => {
         <div className="services">
             <span className="stitle"><span >Our </span>Services</span>
             <div className="card_sec">
-                                {servicesdata.map((data,index)=>{
-                                    console.log(index)
+                                {ddata&&ddata.data.map((data,index)=>{
+                                    console.log(data)
                     return(<motion.div className="cards"
                     key={index}
                     initial={{opacity:0}}
@@ -25,21 +29,22 @@ const Services = () => {
                     >
 
                     <div className="imgsec">
-                        <img src={data.img} alt="" srcset="" />
+                        <img src={data.attributes.imgurl} alt="" srcset="" />
                         
     
                     </div>
                     <div className="text-sec">
                         <span>
     
-                        {data.title}
+                        {data.attributes.Title}
                         </span>
                         <span>
-                            {data.desc}
+                            {data.attributes.Description}
                         </span>
-    
-                    <button>Learn More</button>
-    
+                    
+                    <button><Link to={'/stem'}>Learn More</Link>
+                    </button>
+                    
                     </div>
     
     

@@ -16,31 +16,7 @@ const Navbar = () => {
     const dispatch= useDispatch();
     const {open}=bindActionCreators(actionCreators,dispatch)
     const {navOpen,navClose}=bindActionCreators(actionCreators,dispatch)
-
-
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-
-
-
-
-    
-
-    
-
-
-
-
-    
-    const transition={type:"spring",duration:1.5}
+     const transition={type:"spring",duration:1.5}
   return (
     <>
     

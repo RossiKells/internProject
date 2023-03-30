@@ -1,0 +1,78 @@
+.ITconsult{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.ITconsultHead{
+    /* border: 2px solid black; */
+    text-align: center;
+
+}
+
+.ITconsultHead>span{
+    text-align: center;
+    font-size: 1.5rem;
+    color: skyblue;
+    font-weight: bold;
+    /* border-bottom: 1px solid white; */
+    /* border-width: 1rem; */
+    padding: .1rem;
+
+
+
+}
+
+.mainParent{
+    padding: 7px;
+}
+
+.mainParent>span{
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    padding: .3rem;
+    color: white;
+    cursor: default;
+}
+
+.child{
+    /* padding: 7px; */
+    border: 2px solid skyblue;
+    height: 21rem;
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.child>:nth-child(2){
+    
+    color: white;
+    font-size: 1.2rem;
+    font-weight: semibold;
+    
+
+    
+}
+
+.child>:nth-child(3){
+    color: white;
+    font-size: .8rem;
+    letter-spacing: 1px;
+
+}
+
+
+
+.childImgSec{
+    height: 50%;
+    
+
+}
+.childImgSec>img{
+    padding-top: .5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

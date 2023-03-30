@@ -1,30 +1,39 @@
-import {motion,useScroll} from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
-import Hero from './components/Hero/Hero';
-import Navbar from './components/Navbar/Navbar';
-import Services from './components/Services/Services';
-import Clients from './components/Clients/Clients';
-import Testimonials from './components/Testimonials/Testimonials';
-import Footer from './components/Footer/Footer';
-import Aboutus from './components/Aboutus/Aboutus';
+import Stem from './additionalcomp/Stem';
+import ITconsult from './additionalcomp/ITconsult';
+import Container from './container/Container';
+
 // import SmallNavbar from './components/smallNavbar/smallNavbar';
 
 function App() {
-  const {scrollYProgress}=useScroll()
+  const { scrollYProgress } = useScroll()
   return (
-    <div className="App">
-      <motion.div className='progressBar'
-      style={{scaleX:scrollYProgress}}></motion.div>
-      <Navbar/>
-      {/* <SmallNavbar/> */}
-      <Hero/>
-      <Aboutus/>
-      <Services/>
-      <Clients/>
-      <Testimonials/>
-      <Footer/>
-      
-    </div>
+
+    
+      <div className="App">
+        <motion.div className='progressBar'
+          style={{ scaleX: scrollYProgress }}></motion.div>
+      <Router>
+        <Routes>
+          <Route path='/stem' element={<Stem />} />
+
+
+
+
+          <Route path='/' element={<Container />} />
+          <Route path='/ITconsultation' element={<ITconsult />} />
+        </Routes>
+
+
+        </Router>
+
+
+
+      </div>
+    
+
   );
 }
 
