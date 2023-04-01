@@ -26,6 +26,7 @@
 
 .mainParent{
     padding: 7px;
+
 }
 
 .mainParent>span{
@@ -75,4 +76,398 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+.jobSupportSec{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 9rem;
+    
+
+}
+
+.jobSupportImages{
+    /* margin-top: 1.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.jobSupportImages>img{
+
+    width: 5rem;
+    height: 5rem;
+}
+
+.jobSupportImages>:nth-child(3){
+    width: 10rem;
+}
+
+.jobSupportImages>:nth-child(6){
+    width: 7rem;
+    height: 4rem;
+}
+
+
+
+.jobSupportSec>span{
+    color: skyblue;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+
+}
+
+.achivementParent{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.achivementParent>span{
+    text-align: center;
+    color: skyblue;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    
+}
+
+
+
+.achivements{
+    padding-top: 3rem;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+.achivements>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.achivements>div>span:nth-of-type(1){
+    color: white;
+    font-size: 1.5rem;
+    
+    text-align: center;
+}
+
+.achivements>div>span:nth-of-type(2){
+    color: var(--gray);
+    /* font-size: 1.5rem; */
+    text-transform: uppercase;
+}
+
+.planCards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+
+}
+.planCards>span{
+    text-align: center;
+    font-size: 1.3rem;
+    color: skyblue;
+    font-weight: bold;
+}
+
+
+.planCardsContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    cursor:default;
+}
+
+.planCardsContent>div{
+    padding: 1rem;
+
+    width: 30rem;
+    height: 15rem;
+    gap: 1rem;
+    /* border: 2px solid black; */
+    background-color: skyblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.planCardsContent>div>span{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.planCardsContent>div>img{
+    width: 4rem;
+}
+
+
+.planCardsContent>div>p{
+    color: white;
+    font-size: 1rem;
+
+}
+
+.whatsAppContact{
+    cursor: pointer;
+    position: fixed;
+    right: 12px;
+    bottom: 1.7rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: .5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+
+}
+
+.whatsAppContact>img{
+    width: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    
+.child{
+    height: 19rem;
+    width: 14rem;
+}
+
+.child>:nth-child(2){
+    
+   
+    font-size: .9rem;
+    
+    
+
+    
+}
+
+.child>:nth-child(3){
+    font-size: .7rem;
+}
+
+.planCardsContent>div{
+    width: 25rem;
+}
+    
+}
+
+
+@media screen and (max-width:768px){
+    .child{
+        height: 18rem;
+        width: 10rem;
+    }
+
+    .child>:nth-child(2){
+        font-size: .7rem;
+
+    }
+
+    .child>:nth-child(3){
+    
+   
+        font-size: .6rem;
+        
+        
+    
+        
+    }
+
+    .jobSupportImages>img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .planCardsContent>div{
+        width: 20rem;
+    }
+
+    .planCardsContent>div>span{
+        font-size: 1.3rem;
+    }
+
+    .planCardsContent>div>p{
+        font-size: .9rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width:425px){
+    .child{
+        height: 8rem;
+        width: 5.1rem;
+    }
+
+    .childImgSec{
+        height: 30%;
+    }
+
+    .child>:nth-child(2){
+        font-size: .4rem;
+
+    }
+
+    .child>:nth-child(3){
+    
+   
+        font-size: .3rem;
+        
+        
+    
+        
+    }
+
+
+
+    .jobSupportImages{
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .jobSupportImages>img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .planCardsContent{
+        flex-wrap: wrap;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width:425px){
+    .child{
+        height: 8rem;
+        width: 5rem;
+    }
+
+    .child>:nth-child(2){
+        font-size: .3rem;
+
+    }
+
+    .child>:nth-child(3){
+    
+   
+        font-size: .2rem;
+        
+        
+    
+        
+    }
+
+    .jobSupportImages>img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .jobSupportImages>:nth-child(3){
+        width: 7rem;
+    }
+
+    .jobSupportImages>:nth-child(6){
+        width: 4rem;
+        height: 2rem;
+    }
+
+
+
+
+
+    .planCardsContent>div{
+        width: 18rem;
+        height: 13rem; 
+
+    }
+
+    .planCardsContent>div>span{
+        font-size: 1rem;
+    }
+
+    .planCardsContent>div>p{
+        color: white;
+        font-size: .7rem;
+    
+    }
+    .planCardsContent>div>img{
+        width: 3rem;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    .child{
+        height: 6rem;
+        width: 4.5rem;
+        gap: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:320px){
+    .child{
+        height: 6rem;
+        width: 3.6rem;
+        gap: 1rem;
+    }
+    .child>:nth-child(2){
+        font-size: .2rem;
+
+    }
+
+    .child>:nth-child(3){
+    
+   
+        font-size: .1rem;
+        
+        
+    
+        
+    }
+
+
+    .planCardsContent>div{
+        width: 15rem;
+        height: 13rem; 
+
+    }
+
+
 }
