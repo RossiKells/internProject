@@ -4,6 +4,7 @@ import softwareImg from '../assets/software.jpg'
 import { useState } from 'react'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import {IoMdArrowDropup} from 'react-icons/io'
+import Footer from '../components/Footer/Footer'
 
 const SoftwareDev = () => {
     const [openDropDownId, setOpenDropDownId] = useState(null)
@@ -103,6 +104,8 @@ const SoftwareDev = () => {
 
 
             </div>
+
+            {/* <Footer/> */}
         </div>
     )
 }

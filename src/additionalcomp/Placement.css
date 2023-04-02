@@ -1,0 +1,117 @@
+.Placement{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Placement>span{
+    text-align: center;
+    font-size: 1.4rem;
+    color: skyblue;
+    font-weight:bold ;
+}
+
+.placement_top_contents>ul{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    color: #d3d3d3;
+    list-style-type: circle;
+}
+
+.placement_top_contents>span{
+    color: yellow;
+    font-size: 1.2rem;
+    font-weight: semi-bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji{
+    margin-top: .7rem;
+    display: flex;
+
+    gap: .5rem;
+    list-style: circle;
+}
+
+.ourCourses{
+    margin-top: 25px;
+}
+
+.programcourses{
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+
+
+.programcourses>span{
+    color: skyblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 2px solid black;
+
+    
+
+}
+
+
+
+.coursesCard{
+    display: flex;
+    margin-top: 10px;
+    padding: .7rem;
+    flex-direction: column;
+    width: 17rem;
+    height: 14rem;
+    gap: .8rem;
+    border: 2px solid black;
+    
+    
+}
+
+.coursesCard>:nth-child(2){
+    color: white;
+    font-weight: 500;
+
+}
+
+.coursesCard>:nth-child(3){
+    color: #d3d3d3;
+
+
+}
+
+.coursesCard>:nth-child(3)>span{
+    color: white;
+}
+
+
+
+.coursesImg{
+    height: 50%;
+
+}
+
+.coursesCard>button{
+    justify-self: flex-start;
+    width: 40%;
+    padding: .4rem;
+    font-size: .9rem;
+    color: white;
+    cursor: pointer;
+    background-color: skyblue;
+    outline: none;
+    border: none;
+
+}
+
+
+
+

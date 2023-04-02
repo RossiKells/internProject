@@ -5,6 +5,8 @@ import Stem from './additionalcomp/Stem';
 import ITconsult from './additionalcomp/ITconsult';
 import Container from './container/Container';
 import SoftwareDev from './additionalcomp/SoftwareDev';
+import Placement from './additionalcomp/Placement';
+import Syllabus from './additionalcomp/Syllabus';
 
 // import SmallNavbar from './components/smallNavbar/smallNavbar';
 
@@ -26,6 +28,9 @@ function App() {
           <Route path='/' element={<Container />} />
           <Route path='/ITconsultation' element={<ITconsult />} />
           <Route path='/softwaredevelopment' element={<SoftwareDev/>}/>
+          <Route path='/placement' element={<Placement />} />
+          <Route path='/syllabus' element={<Syllabus />} />
+
         </Routes>
 
 

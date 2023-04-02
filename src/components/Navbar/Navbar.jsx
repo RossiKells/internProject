@@ -54,7 +54,7 @@ const Navbar = () => {
                 <li>Home</li>
                 <li>About</li>
                 <li>Steam Education</li>
-                <li>Job Placement</li>
+                <li>Training / Placement</li>
                 <li>Software Development</li>
                 <li>IT consultation</li>
                 <li>LMS</li>
