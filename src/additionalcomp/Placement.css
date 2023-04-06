@@ -1,18 +1,18 @@
-.Placement{
+.Placement {
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.Placement>span{
+.Placement>span {
     text-align: center;
     font-size: 1.4rem;
     color: skyblue;
-    font-weight:bold ;
+    font-weight: bold;
 }
 
-.placement_top_contents>ul{
+.placement_top_contents>ul {
     display: flex;
     gap: .8rem;
     align-items: center;
@@ -22,7 +22,7 @@
     list-style-type: circle;
 }
 
-.placement_top_contents>span{
+.placement_top_contents>span {
     color: yellow;
     font-size: 1.2rem;
     font-weight: semi-bold;
@@ -30,7 +30,7 @@
     align-items: center;
 }
 
-.emoji{
+.emoji {
     margin-top: .7rem;
     display: flex;
 
@@ -38,32 +38,46 @@
     list-style: circle;
 }
 
-.ourCourses{
+.ourCourses {
     margin-top: 25px;
 }
 
-.programcourses{
+.programcourses {
     margin-top: 20px;
     display: flex;
+    align-items: center;
+    /* justify-content: center; */
     gap: 1rem;
     flex-wrap: wrap;
-    
+
+}
+
+.programcourses>div{
+    /* border: 2px solid black; */
+    width: 99%;
+
+    margin-left: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 
-.programcourses>span{
+
+
+.programcourses>span {
     color: skyblue;
     font-size: 1.4rem;
     font-weight: bold;
     border: 2px solid black;
 
-    
+
 
 }
 
 
 
-.coursesCard{
+.coursesCard {
     display: flex;
     margin-top: 10px;
     padding: .7rem;
@@ -71,35 +85,54 @@
     width: 17rem;
     height: 14rem;
     gap: .8rem;
-    border: 2px solid black;
-    
-    
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(168, 167, 167, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(195, 184, 184, 0.14);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(195, 184, 184, 0.14);
+
+
 }
 
-.coursesCard>:nth-child(2){
+.coursesCard>:nth-child(2) {
     color: white;
     font-weight: 500;
 
 }
 
-.coursesCard>:nth-child(3){
+.coursesCard>:nth-child(3) {
     color: #d3d3d3;
 
 
 }
 
-.coursesCard>:nth-child(3)>span{
+.coursesCard>:nth-child(3)>span {
     color: white;
 }
 
 
 
-.coursesImg{
+.coursesImg {
     height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.coursesCard>button{
+.coursesImg>img {
+    height: 90%;
+    width: 40%;
+    object-fit: contain;
+}
+
+.coursesCard>button {
     justify-self: flex-start;
     width: 40%;
     padding: .4rem;
@@ -111,7 +144,3 @@
     border: none;
 
 }
-
-
-
-

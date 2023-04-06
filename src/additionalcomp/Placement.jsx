@@ -1,8 +1,25 @@
 import React from 'react'
 import './Placement.css'
 import ReactCountriesFlags from "react-countries-flags";
+import useFetch from '../useFetch/useFetch'
+import { useState,useEffect } from 'react';
 
 const Placement = () => {
+  const [sortedData, changesortedData] =useState(null);
+  const { ddata } = useFetch('http://localhost:1337/api/syllabuscards')
+
+  useEffect(() => {
+    if (ddata !== null) {
+      const sorted = ddata.data.slice().sort((a, b) => a.attributes.sn - b.attributes.sn);
+      changesortedData(sorted);
+    }
+  }, [ddata]);
+
+  
+
+  // console.log(ddata)
+
+
   return (
     <div className='Placement'>
 
@@ -21,53 +38,40 @@ const Placement = () => {
           / Nepal <span><ReactCountriesFlags isoCode='np' /></span> for deserving.</span>
       </div>
 
-        <span className='ourCourses'>Our courses</span>
+      <span className='ourCourses'>Our courses</span>
       <div className="programcourses">
-        <div className="coursesCard">
-          <div className="coursesImg">
+      <div>
 
-          </div>
-          <span>Web Design Training </span>
-          <span>Duration: <span>2 months</span></span>
-          <button>Learn more</button>
-        </div>
+        {sortedData && sortedData.map((data) => {
+          // console.log(data.attributes);
+          return (
+            
+              <div className="coursesCard">
 
-        <div className="coursesCard">
-          <div className="coursesImg">
 
-          </div>
-          <span>Web Design Training </span>
-          <span>Duration: <span>2 months</span></span>
-          <button>Learn more</button>
-        </div>
+                <div className="coursesImg">
+                  <img src={data.attributes.imageUrl} alt="" srcset="" />
 
-        <div className="coursesCard">
-          <div className="coursesImg">
 
-          </div>
-          <span>Web Design Training </span>
-          <span>Duration: <span>2 months</span></span>
-          <button>Learn more</button>
-        </div>
+                </div>
+                <span>{data.attributes.Title} </span>
+                <span>Duration: <span>{data.attributes.Duration}</span></span>
+                <button>Learn more</button>
+              </div>
+           
+          )
 
-        <div className="coursesCard">
-          <div className="coursesImg">
+        })}
+       </div>
 
-          </div>
-          <span>Web Design Training </span>
-          <span>Duration: <span>2 months</span></span>
-          <button>Learn more</button>
-        </div>
 
-        <div className="coursesCard">
-          <div className="coursesImg">
 
-          </div>
-          <span>Web Design Training </span>
-          <span>Duration: <span>2 months</span></span>
-          <button>Learn more</button>
-        </div>
-        
+
+
+
+
+
+
       </div>
 
     </div>

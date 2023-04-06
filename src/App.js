@@ -7,6 +7,8 @@ import Container from './container/Container';
 import SoftwareDev from './additionalcomp/SoftwareDev';
 import Placement from './additionalcomp/Placement';
 import Syllabus from './additionalcomp/Syllabus';
+import Lms from './additionalcomp/Lms';
+import Ourteam from './additionalcomp/Ourteam';
 
 // import SmallNavbar from './components/smallNavbar/smallNavbar';
 
@@ -21,15 +23,15 @@ function App() {
       <Router>
         <Routes>
           <Route path='/stem' element={<Stem />} />
-
-
-
-
+          <Route path='/team' element={<Ourteam />} />
           <Route path='/' element={<Container />} />
           <Route path='/ITconsultation' element={<ITconsult />} />
           <Route path='/softwaredevelopment' element={<SoftwareDev/>}/>
-          <Route path='/placement' element={<Placement />} />
-          <Route path='/syllabus' element={<Syllabus />} />
+          <Route path='/placement' element={<Placement/>} />
+          <Route path='/syllabus' element={<Syllabus/>} />
+          <Route path='/lms' element={<Lms/>} />
+          
+
 
         </Routes>
 

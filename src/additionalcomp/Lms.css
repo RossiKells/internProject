@@ -1,0 +1,13 @@
+.lms{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lms>span{
+    font-size: 2rem;
+    color: skyblue;
+    letter-spacing: 2px;
+}
