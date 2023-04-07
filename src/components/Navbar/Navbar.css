@@ -98,6 +98,11 @@
     
 }
 
+.list>li>:nth-child(1){
+    text-decoration: none;
+    color: white;
+}
+
 
 
 .logoName{
@@ -149,8 +154,10 @@
 
 }
 
-.lists>li{
+.lists>li>:nth-child(1){
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
 .lists>li:hover{
@@ -311,5 +318,15 @@
         width: 4rem;
     }
     
+}
+
+@media screen and (max-width: 375px){
+    .closeButton{
+        font-size: 1.4rem;
+    }
+    .list{
+        font-size: 1rem;
+    }
+
 }
 

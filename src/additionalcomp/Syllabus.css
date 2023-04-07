@@ -1,6 +1,7 @@
 .Syllabus{
     padding: 2rem 2rem;
     display: flex;
+    height: 100%;
     flex-direction: column;;
     gap: 1rem;
 
@@ -82,3 +83,62 @@
 .syllabusContent>p{
     font-size: .9rem;
 }
+
+
+@media screen and (max-width: 768px){
+    .syllabusTopic{
+        width: 47.4rem;
+    }
+    .syllabusDesc{
+        width: 46rem;
+
+    }
+
+    
+}
+
+@media screen and (max-width: 425px){
+    .syllabusTopic{
+        width: 26.3rem;
+    }
+
+    .syllabusDesc{
+        width: 24.9rem;
+
+    }
+
+    .syllabusIntro>p{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .syllabusTopic{
+        width: 22.8rem;
+    }
+
+    .syllabusDesc{
+        width: 21.4rem;
+
+    }
+    .syllabusTopic{
+        text-align: center;
+    }
+
+    .syllabusDesc{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .syllabusTopic{
+        width: 19.4rem;
+    }
+
+    .syllabusDesc{
+        width: 18rem;
+
+    }
+
+}
+

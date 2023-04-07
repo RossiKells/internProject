@@ -1,0 +1,120 @@
+.ourTeam{
+    padding: 2rem 2rem;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.ourTeam>span{
+    text-align: center;
+    font-size: 2rem;
+    color: skyblue
+
+
+}
+
+
+.teamParent>div{
+    margin: auto;
+    border: 2px solid skyblue;
+    width: 25rem;
+    height: 15rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.teamImg{
+    width: 100%;
+    height: 70%;
+    border: 1px solid skyblue;
+}
+
+.teamImg>img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.teamChild>div{
+    margin: auto;
+    border: 2px solid skyblue;
+    color: white;
+    width: 20rem;
+    height: 15rem;
+
+
+
+}
+
+.teamChild>div>span{
+    
+    
+    padding-top: 10px;
+
+}
+
+.staffname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    
+}
+
+@media screen and (max-width: 425px) {
+    .teamParent>div{
+        width: 14rem;
+        height: 15rem;
+        font-size: 1rem;
+    }
+   .teamChild>div{
+    width: 10rem;
+    height: 12rem; 
+   }
+
+
+   .staffname{
+    font-size: .7rem;
+   }
+    
+   
+
+}
+
+@media screen and (max-width: 375px){
+
+    .teamParent>div{
+        width: 12rem;
+        height: 12rem;
+        font-size: 1rem;
+    }
+    .teamChild>div{
+        width: 9rem;
+        height: 10rem; 
+       }
+}
+    
+@media screen and (max-width: 375px){
+    .teamParent>div{
+        width: 11rem;
+        height: 12rem;
+    }
+
+    .teamChild>div{
+        width: 8rem;
+        height: 10rem; 
+       }
+
+
+    .staffname{
+            font-size: .6rem;
+        }
+        
+    }
+
+
+    
+
