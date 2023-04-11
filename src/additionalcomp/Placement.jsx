@@ -3,8 +3,10 @@ import './Placement.css'
 import ReactCountriesFlags from "react-countries-flags";
 import useFetch from '../useFetch/useFetch'
 import { useState,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Placement = () => {
+  const links=["Javasyllabus","DigitalMarketing-syllabus","DBMS-syllabus","ASP-syllabus","flutter-syllabus","django-syllabus"]
   const [sortedData, changesortedData] =useState(null);
   const { ddata } = useFetch('http://localhost:1337/api/syllabuscards')
 
@@ -42,11 +44,12 @@ const Placement = () => {
       <div className="programcourses">
       <div>
 
-        {sortedData && sortedData.map((data) => {
+        {sortedData && sortedData.map((data,index) => {
+          
           // console.log(data.attributes);
           return (
             
-              <div className="coursesCard">
+              <div className="coursesCard" key={index}>
 
 
                 <div className="coursesImg">
@@ -56,7 +59,7 @@ const Placement = () => {
                 </div>
                 <span>{data.attributes.Title} </span>
                 <span>Duration: <span>{data.attributes.Duration}</span></span>
-                <button>Learn more</button>
+                <button><Link to={`/${links[index]}`}>Learn more</Link></button>
               </div>
            
           )

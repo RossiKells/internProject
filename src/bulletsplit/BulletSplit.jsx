@@ -12,15 +12,14 @@ const BulletSplit = (text) => {
     // console.log(filtredNewText)
 
     const bulletPoints = filtredNewText.split("•").map((point) => point.trim())
+    
 
-    // console.log(bulletPoints)
+    
 
     const intro=bulletPoints[0]
     const modifiedIntro=intro.substring(1)
 
-    console.log(bulletPoints
-        
-        )
+    
     
     
 

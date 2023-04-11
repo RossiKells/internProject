@@ -6,8 +6,9 @@ import BulletSplit from '../bulletsplit/BulletSplit'
 
 
 
-const Syllabus = () => {
-    const { ddata } = useFetch('http://localhost:1337/api/java-syllabi?populate=deep')
+const ASPSyllabus = () => {
+    const { ddata } = useFetch('http://localhost:1337/api/asp-net-syllabi?populate=deep');
+    // console.log('digital market',ddata)
     
 
    
@@ -53,8 +54,8 @@ const Syllabus = () => {
                                         <div className="syllabusDesc">
 
                                             {
-                                                (val.attributes.java_section_lists.data.map((val, key) => {
-                                                    const description = val.attributes.java_section_content.data.attributes.Description
+                                                (val.attributes.asp_net_section_lists.data.map((val, key) => {
+                                                    const description = val.attributes.asp_net_section_content.data.attributes.Description
 
 
 
@@ -62,7 +63,7 @@ const Syllabus = () => {
                                                         <>
                                                             <div className="syllabusContent" key={key}>
 
-                                                                <span>{val.attributes.java_section_content.data.attributes.Title}</span>
+                                                                <span>{val.attributes.asp_net_section_content.data.attributes.Title}</span>
 
                                                                
 
@@ -120,4 +121,4 @@ const Syllabus = () => {
     )
 }
 
-export default Syllabus
+export default ASPSyllabus;

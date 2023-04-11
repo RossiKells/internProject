@@ -1,60 +1,104 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Hero.css'
 import coderImg from '../../assets/code.png'
+import NumberCounter from 'number-counter'
 
 import { motion } from 'framer-motion'
 import { AiOutlineClose } from 'react-icons/ai'
-import { useSelector ,useDispatch} from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import {actionCreators} from '../../state/index.js'
+import { actionCreators } from '../../state/index.js'
+
 
 
 
 
 const Hero = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
     // console.log(actionCreators)
-    const val=useSelector(action=>action.val)
-    const dispatch=useDispatch();
-    const {close}=bindActionCreators(actionCreators,dispatch)
-    
-    
+    const val = useSelector(action => action.val)
+    const dispatch = useDispatch();
+    const { close } = bindActionCreators(actionCreators, dispatch)
+    const sendBtn = (event) => {
+        
+
+        
+        event.preventDefault();
+        
+        close();
+       
+        
+        
+
+        
+        
+
+        
+
+        fetch("http://localhost:1337/api/contact-details", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                data: {
+                    name,
+                    email,
+                    phone,
+                    message
+                    
+                },
+            }),
+        })
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+
+
+
+    }
+
+
     const transition = { type: "spring", duration: 3 }
     return (
         <div className='Hero'>
             {
-             val&&(
+                val && (
                     <div className="contactForm">
-                        <AiOutlineClose onClick={()=>{close()}} />
+                        <AiOutlineClose onClick={() => { close() }} />
                         <form action="submit" className='forum'>
                             <div>
 
-                                <input type="text" name="Firstname" id="firstname" />
-                                <label for="firstname">Name</label>
+                                <input type="text"   value={name} onChange={(event) => setName(event.target.value)} />
+                                <label htmlFor="Name">Name</label>
                             </div>
 
 
 
                             <div>
 
-                                <input type="email" name='Email' id="email" />
-                                <label for="firstname">Email</label>
+                                <input type="email"  id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+                                <label htmlFor="email">Email</label>
                             </div>
 
 
                             <div>
 
-                                <input type="phone" name='phone' />
-                                <label for="phone">Phone</label>
+                                <input type="phone"  id='phone' value={phone} onChange={(event) => setPhone(event.target.value)} />
+                                <label htmlFor="phone">Phone</label>
                             </div>
 
                             <div className='textArea'>
 
-                                <textarea name="message" id="message"></textarea>
-                                <label for="message">Message</label>
+                                <textarea  id="message" value={message} onChange={(event) => setMessage(event.target.value)}></textarea>
+                                <label htmlFor="message">Message</label>
                             </div>
                             <div className='buttonArea'>
 
-                                <button className='messagebutton'>Send</button>
+                                <button className='messagebutton' onClick={sendBtn}>Send</button>
                             </div>
 
 
@@ -99,24 +143,21 @@ const Hero = () => {
 
                 <div className="figures">
                     <div>
-                        <span>+140</span>
-                        <span>Expert Coaches</span>
+                        <span><NumberCounter end={100} start={50} delay='2' prefix="+"/>+</span>
+                        <span>Team Members</span>
                     </div>
                     <div>
-                        <span>+977</span>
-                        <span>members joined</span>
+                        <span><NumberCounter end={100} start={50} delay='2' prefix="+"/>%</span>
+                        <span>Client Satisfaction</span>
                     </div>
                     <div>
-                        <span>+50</span>
-                        <span>Projects</span>
+                        <span><NumberCounter end={500} start={450} delay='4' prefix="+"/>+</span>
+                        <span>Clients</span>
                     </div>
 
                 </div>
 
-                <div className="btn">
-                    <button className="btn">Get started</button>
-                    <button className="btn">Learn more</button>
-                </div>
+                
 
 
             </div>
